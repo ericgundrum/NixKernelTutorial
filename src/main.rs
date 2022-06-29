@@ -1,8 +1,9 @@
 #![no_std]
 #![no_main]
-#![feature(asm)]
+#![feature(asm_sym)]
 #![feature(naked_functions)]
 
+use core::arch::asm;
 use core::panic::PanicInfo;
 
 extern "C" {
